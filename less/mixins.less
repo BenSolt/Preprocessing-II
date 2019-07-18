@@ -1,1 +1,25 @@
 // Mixins in here
+
+// Header Navigation
+
+.headerFlex(@justify){
+    display: flex;
+    justify-content: @justify;
+    
+}
+
+// Button
+
+.custom-button(@bg-color, @width, @padding, @fontColor){
+    border-radius: 18px;
+    font-size: 2.5rem;
+    background-color: @bg-color;
+    width: @width;
+    color: @fontColor;
+    padding: @padding;
+}
+
+.line(){
+    width:100%;
+    border-bottom: 2px dashed @navigation-border; 
+}
